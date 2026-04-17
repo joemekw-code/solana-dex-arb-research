@@ -1,0 +1,25 @@
+{"ts":"2026-04-17T05:57:47.086Z","sym":"JUP","profit":5531,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T05:57:47.598Z","sym":"JUP_L","profit":8160,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T05:57:47.605Z","sym":"JUP_L","profit":8160,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T05:58:17.199Z","sym":"JUP_L","profit":5623,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T05:59:40.381Z","sym":"JUP_L","profit":7897,"net":2697,"action":"executed","sig":"3rALiWMhxDPpgqjQcbUd35qbwC7396MNLkzEPkPdtDPo8vyzwukMRe4SNCr8tevqZuHsVFnhR2jLZEGt241miTzD"}
+{"ts":"2026-04-17T05:59:40.684Z","sym":"JUP","profit":14245,"action":"sim_fail","err":"{\"InstructionError\":[5,\"InvalidAccountData\"]}"}
+{"ts":"2026-04-17T06:00:27.583Z","sym":"JUP_L","profit":7992,"action":"error","err":"Signature zFnFKztVnzrj9jwNyKswnneDxRjDbnkdZGNPkXNE"}
+{"ts":"2026-04-17T06:00:28.106Z","sym":"JUP_L","profit":7890,"action":"error","err":"Signature 4dXW3wsPsk6qmJKdNJqZXB1WEvXz8YpwbxVrGx8G"}
+{"ts":"2026-04-17T06:00:28.108Z","sym":"JUP_L","profit":7992,"action":"error","err":"Signature 2EkvHZtBYZcqbgiTJoy2xE7Mjsyt3hsdD8nBAQoN"}
+{"ts":"2026-04-17T06:00:29.775Z","sym":"JUP_L","profit":8179,"action":"error","err":"Signature 2e2nwEoixoEpS94FXKocy79FEY9vkMSaBtgHM7po"}
+{"ts":"2026-04-17T06:07:58.557Z","sym":"JUP_XL","profit":9205,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T06:09:14.624Z","sym":"JUP_XL","profit":10506,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:09:15.764Z","sym":"JUP_XL","profit":10000,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:10:34.827Z","sym":"JUP_XL","profit":28245,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T06:10:38.918Z","sym":"JUP_XL","profit":19888,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:10:46.768Z","sym":"JUP_XL","profit":9275,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:11:47.345Z","sym":"JUP","profit":5239,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T06:12:41.157Z","sym":"JUP_XL","profit":11918,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:12:43.960Z","sym":"JUP_XL","profit":18597,"action":"error","err":"failed to simulate transaction: base64 encoded sol"}
+{"ts":"2026-04-17T06:13:11.448Z","sym":"JUP_XL","profit":21468,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:16:23.398Z","sym":"JUP_XL","profit":5655,"action":"sim_fail","err":"{\"InstructionError\":[3,{\"Custom\":1}]}"}
+{"ts":"2026-04-17T06:16:29.876Z","sym":"JUP_XL","profit":30524,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T06:16:30.333Z","sym":"JUP_L","profit":7704,"action":"error","err":"encoding overruns Uint8Array"}
+{"ts":"2026-04-17T07:30:41.342Z","sym":"JUP_HALF","profit":7155,"action":"sim_fail","err":"{\"InstructionError\":[6,{\"Custom\":6024}]}"}
+{"ts":"2026-04-17T07:30:54.139Z","sym":"JUP_HALF","profit":7948,"action":"sim_fail","err":"{\"InstructionError\":[6,{\"Custom\":6024}]}"}

@@ -1,0 +1,7 @@
+node_modules/
+.env
+wallet.json
+hl-wallet.json
+.bot-wallet.json
+.hl-wallet.json
+*.secret

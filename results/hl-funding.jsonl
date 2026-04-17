@@ -1,0 +1,4 @@
+{"ts":"2026-04-17T10:10:46.334Z","action":"DRY_OPEN","coin":"ZETA","direction":"LONG","sizePct":"33.33"}
+{"ts":"2026-04-17T10:10:46.341Z","action":"DRY_OPEN","coin":"TST","direction":"SHORT","sizePct":"33.33"}
+{"ts":"2026-04-17T10:10:46.345Z","action":"DRY_OPEN","coin":"SAGA","direction":"LONG","sizePct":"33.33"}
+{"ts":"2026-04-17T10:10:46.348Z","action":"SCAN","best":[{"name":"ZETA","dir":"LONG","rate":"-0.0301","consistency":"83"},{"name":"TST","dir":"SHORT","rate":"0.0203","consistency":"93"},{"name":"SAGA","dir":"LONG","rate":"-0.0238","consistency":"83"}],"weeklyEst":"17.40"}

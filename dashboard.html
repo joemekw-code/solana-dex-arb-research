@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Arb Bot Dashboard</title>
+<meta http-equiv="refresh" content="5">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;color:#eee;font-family:monospace;padding:16px}
+h1{font-size:18px;color:#0f0;margin-bottom:12px}
+.stats{display:flex;gap:12px;margin-bottom:16px}
+.stat{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:12px;flex:1;text-align:center}
+.stat .v{font-size:24px;font-weight:bold;color:#0f0}
+.stat .l{font-size:11px;color:#888;margin-top:4px}
+.neg .v{color:#f44}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:6px;border-bottom:1px solid #333;color:#888}
+td{padding:6px;border-bottom:1px solid #222}
+.profit{color:#0f0}.loss{color:#f44}
+.exec{color:#0f0;font-weight:bold}
+.fail{color:#f44}
+</style>
+</head><body>
+<h1>⚡ Arb Bot Live Dashboard</h1>
+<div class="stats" id="stats"></div>
+<h3 style="font-size:13px;color:#888;margin:12px 0 8px">Recent Events</h3>
+<table><thead><tr><th>Time</th><th>Token</th><th>Profit</th><th>Net</th><th>Action</th><th>Sig</th></tr></thead>
+<tbody id="events"></tbody></table>
+<script>
+async function load(){
+  try{
+    const r=await fetch('/api/status');
+    const d=await r.json();
+    document.getElementById('stats').innerHTML=`
+      <div class="stat"><div class="v">${d.balance}</div><div class="l">SOL Balance</div></div>
+      <div class="stat"><div class="v">${d.swaps}</div><div class="l">Swaps Detected</div></div>
+      <div class="stat"><div class="v">${d.checks}</div><div class="l">Checks</div></div>
+      <div class="stat"><div class="v">${d.executed}</div><div class="l">Executed</div></div>
+      <div class="stat ${d.totalProfitUsd<0?'neg':''}"><div class="v">$${d.totalProfitUsd}</div><div class="l">Total Profit</div></div>
+      <div class="stat"><div class="v">${d.uptime}</div><div class="l">Uptime</div></div>
+    `;
+    document.getElementById('events').innerHTML=d.events.map(e=>`
+      <tr>
+        <td>${e.ts?.slice(11,19)||''}</td>
+        <td>${e.sym||''}</td>
+        <td class="${e.profit>0?'profit':'loss'}">${e.profit||''}</td>
+        <td class="${e.net>0?'profit':'loss'}">${e.net||''}</td>
+        <td class="${e.action==='executed'?'exec':'fail'}">${e.action||''}</td>
+        <td>${e.sig?'<a href="https://solscan.io/tx/'+e.sig+'" target="_blank" style="color:#58f">'+e.sig.slice(0,12)+'...</a>':''}</td>
+      </tr>
+    `).join('');
+  }catch{document.getElementById('stats').innerHTML='<div class="stat"><div class="v">Offline</div><div class="l">Bot not running</div></div>';}
+}
+load();
+</script>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "name": "solana-dex-arb-research",
+  "version": "1.0.0",
+  "description": "Solana DEX arbitrage research — 75,000+ patterns tested, full verification report",
+  "main": "src/sim-arb.js",
+  "scripts": {
+    "spread-monitor": "node src/spread-monitor.js",
+    "sim-arb": "node src/sim-arb.js",
+    "pump-sniper": "DRY_RUN=true node src/pump-sniper.js",
+    "copy-trade": "DRY_RUN=true node src/copy-trade.js",
+    "hl-funding": "DRY_RUN=true node src/hl-funding.js",
+    "dashboard": "node dashboard-server.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@solana/spl-token": "^0.4.14",
+    "ws": "^8.18.2",
+    "ethers": "^6.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "license": "MIT"
+}
